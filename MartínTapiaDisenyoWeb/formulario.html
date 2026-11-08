@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedido</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+  <h1>PlantaTienda</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="formulario.html">Pedido</a>
+    <a href="login.html">Acceso</a>
+  </nav>
+</header>
+
+<!-- Formulario -->
+<main>
+  <h2>Hacer pedido</h2>
+  <p>* = Obligatorio</p>
+
+  <form>
+
+    <fieldset>
+      <legend>Datos del cliente</legend>
+
+      <div class="campo">
+        <label for="nombre">Nombre *:</label>
+        <input type="text" id="nombre" required>
+      </div>
+
+      <div class="campo">
+        <label for="email">Correo *:</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="campo">
+        <label for="telefono">Teléfono (opcional):</label>
+        <input type="tel" id="telefono">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Datos del pedido</legend>
+
+      <div class="campo">
+        <label for="planta">Planta *:</label>
+        <select id="planta" required>
+          <option value="">Selecciona</option>
+          <option>Marihuana</option>
+          <option>Cactus</option>
+          <option>Aloe vera</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="cantidad">Cantidad *:</label>
+        <input type="number" id="cantidad" min="1" max="20" required>
+      </div>
+
+      <div class="campo">
+        <label for="fecha">Fecha de recogida *:</label>
+        <input type="date" id="fecha" required>
+      </div>
+
+      <fieldset>
+        <legend>Entrega *</legend>
+        <label><input type="radio" name="entrega" required> Recogida</label>
+        <label><input type="radio" name="entrega"> Envío</label>
+      </fieldset>
+
+      <div class="campo">
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" rows="3"></textarea>
+      </div>
+
+      <label>
+        <input type="checkbox" required>
+        * Entiendo que no entiendo que tu entiendes que yo no me entiendo.
+      </label>
+    </fieldset>
+
+    <button type="submit">Pagar</button>
+  </form>
+</main>
+
+<footer>PlantaTienda</footer>
+</body>
+</html>
