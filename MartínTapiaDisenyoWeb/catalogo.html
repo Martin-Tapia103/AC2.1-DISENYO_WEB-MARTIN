@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+  <h1>PlantaTienda</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="formulario.html">Pedido</a>
+    <a href="login.html">Acceso</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Catálogo de plantas</h2>
+
+  <label for="buscar">Buscar planta:</label>
+  <input type="search" id="buscar">
+  <button type="button">Buscar</button>
+
+  <fieldset>
+    <legend>Filtros</legend>
+
+    <label for="tipo">Tipo:</label>
+    <select id="tipo">
+      <option>Todas</option>
+      <option>Interior</option>
+      <option>Exterior</option>
+    </select>
+
+    <label for="precio">Precio:</label>
+    <select id="precio">
+      <option>Todos</option>
+      <option>Menos de 15 €</option>
+      <option>15 € o más</option>
+    </select>
+
+    <button type="button">Aplicar filtros</button>
+  </fieldset>
+
+  <!-- Plantas -->
+  <section class="catalogo" aria-label="Plantas disponibles">
+
+    <article>
+      <h3>Marihuana</h3>
+      <img src="https://media.istockphoto.com/id/1810815903/es/foto/cannabis.jpg?s=612x612&w=0&k=20&c=C64G_qJJIp8psGA9zYKBBMLkY5V8ruEBIkkZK1stmPQ=" alt="MARIA">
+      <p>Droga.</p>
+      <p>80 €</p>
+      <a href="detalle.html">Ver detalle</a>
+    </article>
+
+    <article>
+      <h3>Cactus</h3>
+      <img src="https://www.compo.de/dam/jcr:5e382c1a-8128-4670-9f96-a75044fe31b2/Kaktus%20Blumentopf.jpg?x=46&y=41" alt="Cactus">
+      <p>El mejor amego de un camello.</p>
+      <p>20 €</p>
+    </article>
+
+    <article>
+      <h3>Aloe vera</h3>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0X6w-fhQGL-0EvsQZdvxJExmIcU6c-5pCeLpA9ojM6i1S1szPYParJHg&s=10" alt="CREMITA">
+      <p>Para viejas.</p>
+      <p>8 €</p>
+    </article>
+
+    <article>
+      <h3>HelechoDeRoca</h3>
+      <img src="https://www.minecraft.net/content/dam/minecraftnet/archive/6b26befe4607be9b3f8cb1c715bd9b6c-header.jpg" alt="Minicart">
+      <p>No se destruye.</p>
+      <p>1000000000 €</p>
+    </article>
+
+    <article>
+      <h3>Lavanda</h3>
+      <img src="https://falconagroalimentaria.com/wp-content/uploads/2025/03/comprar-lavanda-natural.webp" alt="Pestazo">
+      <p>Para el jardín.</p>
+      <p>15 €</p>
+    </article>
+
+    <article>
+      <h3>Palmera</h3>
+      <img src="https://cdn0.ecologiaverde.com/es/posts/9/9/4/cocotero_6499_600.jpg" alt="COCOLOCO">
+      <p>Viene sin cocos.</p>
+      <p>35 €</p>
+    </article>
+  </section>
+
+  <nav>
+    <button type="button">Anterior</button>
+    <button type="button">1</button>
+    <button type="button">2</button>
+    <button type="button">3</button>
+    <button type="button">Siguiente</button>
+  </nav>
+</main>
+
+<footer>PlantaTienda</footer>
+</body>
+</html>
